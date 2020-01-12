@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FirstSuite">
+    <test name="Test1">
+        <packages>
+            <package name="com.lingualeo"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [FirstSuite]" parallel="none">
+  <test name="Test1(failed)" parallel="none">
+    <classes>
+      <class name="com.lingualeo.Base">
+        <methods>
+          <include name="setWebDriver"/>
+        </methods>
+      </class> <!-- com.lingualeo.Base -->
+      <class name="com.lingualeo.Test1">
+        <methods>
+          <include name="print"/>
+          <include name="enterCorrectResult"/>
+          <include name="getGoogleTranslates"/>
+          <include name="goToGoogle"/>
+        </methods>
+      </class> <!-- com.lingualeo.Test1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [FirstSuite] -->
