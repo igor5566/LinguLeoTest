@@ -10,9 +10,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.Assert;
 
 public class Base {
-    public static WebDriver driver;
-    public static ChromeOptions options;
-    public static WebDriverWait wait;
+    public WebDriver driver;
+    public ChromeOptions options;
+    public WebDriverWait wait;
 
     @BeforeSuite
     public void setWebDriver() {

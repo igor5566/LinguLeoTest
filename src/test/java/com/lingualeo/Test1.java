@@ -46,6 +46,12 @@ public class Test1 extends Base {
     @Test (priority = 2)
     public String chooseTheTask() {
         answers = new ArrayList<>();
+        try {
+            WebElement closeSellBtn = wait.until(visibilityOfElementLocated(By.cssSelector("div.ll-leokit__modal__header > div.ll-leokit__modal__close")));
+            closeSellBtn.click();
+        } catch (Exception ex) {
+            System.out.println("Proposition wasn't shown.");
+        }
         WebElement learnBtn = wait.until(elementToBeClickable(By.cssSelector("li:nth-child(3) > div > div> a[href='/ru/training']:nth-child(1)")));
         learnBtn.click();
         WebElement wordTrnslBtn = wait.until(elementToBeClickable(By.cssSelector("div.ll-leokit__kit-layer > a[href='/ru/training/wordTranslate']")));
