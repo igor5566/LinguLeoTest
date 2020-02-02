@@ -28,9 +28,9 @@ public class Test1 extends Base {
     List<String> listWords;
     List<String> answers;
 
-    public static WebDriver driver1;
-    public static ChromeOptions options1;
-    public static WebDriverWait wait1;
+    public WebDriver driver1;
+    public ChromeOptions options1;
+    public WebDriverWait wait1;
 
     @Test (priority = 1)
     public void loginLinguaLeo() {
